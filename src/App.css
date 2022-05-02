@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div {
+  /* border: 1px solid grey; */
+  /* margin: 5px;
+  padding: 5px; */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.floor-plan {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "br1 br1 lr lr k"
+    "br1 br1 lr lr k"
+    "fb fb lr lr k"
+    "br2 br2 hb br3 br3"
+    "br2 br2 hb br3 br3";
+}
+
+.bedroom {
+  background-color: rgb(62, 112, 134);
+}
+.bath {
+  background-color: rgb(113, 136, 49);
+}
+.living-room {
+  background-color: rgb(200, 172, 130);
+  grid-area: lr;
+}
+.kitchen {
+  background-color: rgb(241, 166, 59);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  grid-area: k;
+}
+
+.kitchenette {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 10%;
+}
+
+.oven {
+  background-color: rgb(201, 71, 23);
+  width: 50%;
+  height: 100%;
+}
+.sink {
+  background-color: rgb(147, 86, 19);
+  width: 50%;
+  height: 100%;
+}
+.bedroom-1 {
+  grid-area: br1;
+}
+.bedroom-2 {
+  grid-area: br2;
+}
+.bedroom-3 {
+  grid-area: br3;
+}
+
+.half {
+  grid-area: hb;
+}
+
+.full {
+  grid-area: fb;
+}
+
